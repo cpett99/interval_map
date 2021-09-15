@@ -31,7 +31,20 @@ myMap.at(10); // 0
 
 -----------------------------------------------------------------------------------------------------------
 
-Here is my Javascript example where K and V are integers and the default value returned is 0 unless you change default value using setDefault:
+<b>Install instructions</b>
+
+copy repo into your testing directory
+
+install mocha and then npm test (see following commands)
+  
+npm install --save mocha chai<br>
+npm test
+  
+-------------------------------------------------------------------------------------------------------------
+
+<b>You can also test a standalone file index.html</b>
+
+<b>Here is my Javascript example where K and V are integers and the default value returned is 0 unless you change default value using setDefault:</b>
 
 const myMap = new mapRanges()
 
