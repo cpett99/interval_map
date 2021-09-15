@@ -1,0 +1,28 @@
+{
+  "name": "interval_map",
+  "version": "1.0.0",
+  "description": "The task is to implement an interval_map container class which maps intervals of keys of class K to values of arbitrary class V. If you use JavaScript for your implementation, it's okay to use a third-party library that implements a sorted container like SortedMap. It will be up to you to select a library that meets the needs of the project. However, if you prefer another language, go ahead and use it instead.",
+  "main": "index.js",
+  "directories": {
+    "test": "test"
+  },
+  "scripts": {
+    "test": "mocha --reporter spec"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/cpett99/interval_map.git"
+  },
+  "author": "Chris Pettigrew",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/cpett99/interval_map/issues"
+  },
+  "homepage": "https://github.com/cpett99/interval_map#readme",
+  "dependencies": {
+    "chai": "^4.3.4",
+    "express": "^4.17.1",
+    "mocha": "^9.1.1",
+    "request": "^2.88.2"
+  }
+}
