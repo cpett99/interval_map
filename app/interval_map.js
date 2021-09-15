@@ -4,6 +4,8 @@ class mapRanges {
     #defaultValue = 0
     
     // This function pushes new kvalue range and value into the interval map
+    // kvalues (type Array ex: [1,6])
+    // value (type varchar)
     insert(kvalues, value) {
         this.#myMap.push({kvalues, value})
     }
@@ -14,6 +16,7 @@ class mapRanges {
     }
 
     // In case you want to change the default value
+    // value (type varchar)
     setDefault(value) {
         this.#defaultValue = value
     }
@@ -23,6 +26,7 @@ class mapRanges {
        that K falls into or a default value (which needs to be 
        defined when the interval_map is instantiated) when no such 
        interval exists.*/
+    // lookup (type float)
     at(lookup) {
         let range = this.#myMap[i]
 
