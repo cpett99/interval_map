@@ -39,6 +39,13 @@ install mocha and then npm test (see following commands)
   
 npm install --save mocha chai<br>
 npm test
+
+-------------------------------------------------------------------------------------------------------------
+<b>To Add More Ranges or Test Cases</b>
+
+1) Open /tests/interval_map.js<br>
+2) Add range on line 13. Copy line 12 above and enter new range and value
+3) Add Test case on line 49 (see commented code at line 49)
   
 -------------------------------------------------------------------------------------------------------------
 
