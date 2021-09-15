@@ -36,14 +36,22 @@ Here is my Javascript example where K and V are integers and the default value r
 const myMap = new mapRanges()
 
 myMap.insert([1,6], 4)
+
 myMap.insert([5,10], 8)
+
 myMap.insert([12,16], 14)
 
+
 myMap.at(1)  // 4
+
 myMap.at(5.5) // 8
+
 myMap.at(11) // 0
+
 myMap.at(14) // 14
 
+
 myMap.setDefault(999) 
+
 myMap.at(16) // 999
 
