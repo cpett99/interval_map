@@ -20,17 +20,17 @@
             this.#defaultValue = value
         }
         
-        // The lookup or retrieval method takes a single K value 
-        // and returns the V value that corresponds to the interval 
-        // that K falls into or a default value (which needs to be 
-        // defined when the interval_map is instantiated) when no such 
-        //interval exists.
+        /* The lookup or retrieval method takes a single K value 
+           and returns the V value that corresponds to the interval 
+           that K falls into or a default value (which needs to be 
+           defined when the interval_map is instantiated) when no such 
+           interval exists.*/
         at(lookup) {
             let range = this.#myMap[i]
 
-            // Loop through the interval map in reverse and return the value if found.
-            // No need to complete the loop once range found since the ranges override 
-            // preceeding ranges
+            /* Loop through the interval map in reverse and return the value if found.
+               No need to complete the loop once range found since the ranges override 
+               preceeding ranges */
             for(var i = this.#myMap.length-1; i >= 0; i--){
                 let range = this.#myMap[i]
                 if(range.kvalues[0] <= lookup && range.kvalues[1] > lookup){
@@ -68,4 +68,11 @@ myMap.at(5)<br>
 myMap.at(11)<br>
 myMap.at(14)<br>
 myMap.setDefault(999)<br>
-myMap.at(16)
+myMap.at(16)<br><br>
+
+The above output should be<br>
+4<br>
+8<br>
+0<br>
+14<br>
+999
